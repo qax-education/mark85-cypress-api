@@ -1,5 +1,4 @@
 describe('POST /tasks', () => {
-
     beforeEach(function () {
         cy.fixture('tasks/post').then(function (tasks) {
             this.tasks = tasks
@@ -7,7 +6,6 @@ describe('POST /tasks', () => {
     })
 
     context('register a new task', function() {
-
         before(function(){
             cy.purgeQueueMessages()
                 .then(response => {
@@ -49,9 +47,6 @@ describe('POST /tasks', () => {
                     expect(response.body[0].payload).to.include(user.email)
                 })
         })
-
-
-
     })
 
     it('duplicate task', function () {
@@ -72,5 +67,4 @@ describe('POST /tasks', () => {
                     })
             })
     })
-
 })
