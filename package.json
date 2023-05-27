@@ -1,0 +1,28 @@
+{
+  "name": "mark85-cypress-api",
+  "version": "1.0.0",
+  "description": "Projeto de testes de API do Mark85",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress run"
+  },
+  "keywords": [
+    "cypress",
+    "api",
+    "mark85",
+    "mongodb",
+    "rabbimq"
+  ],
+  "author": "Fernando Papito",
+  "license": "ISC",
+  "devDependencies": {
+    "@shelex/cypress-allure-plugin": "^2.39.1",
+    "allure-commandline": "^2.22.1",
+    "bcrypt": "^5.1.0",
+    "cypress": "^12.12.0",
+    "cypress-plugin-api": "^2.11.1",
+    "dotenv": "^16.0.3",
+    "jsonwebtoken": "^9.0.0",
+    "mongodb": "^5.5.0"
+  }
+}
